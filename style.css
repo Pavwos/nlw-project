@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap');
+
 
 *, :root{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Serif', serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +14,7 @@
 }
 
 body{
-  background-color: #0f172a;
+  background-color: #5D3587;
 }
 
 main{
@@ -23,15 +24,40 @@ main{
 }
 
 header{
-  margin-top: 64px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } 
 
+.bg-header{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #f700ff00, #5D3587 90%), url(https://images2.alphacoders.com/132/1324993.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header .logo-nlw{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e2e2a3;
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
 header h1{
-  font-size: 30px;
-  color: #f1f5f9;
-  margin-top: 24px;
+  font-family: 'Noto Serif', serif;
+  font-size: 69px;
+  color: #eb6ad8;
+  text-decoration: underline;
 }
 
 #quiz{
@@ -40,24 +66,24 @@ header h1{
 
 .quiz-item{
   margin-top: 24px;
-  border: 1px solid #475569;
+  border: 1px solid #F1DDBF;
   border-radius: 6px;
   overflow: hidden;
 }
 
 .quiz-item h3{
   padding: 16px 20px;
-  color: #e2e8f0;
+  color: #FFD1E3;
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #1e293b;
+  background-color: #392467;
 }
 
 .quiz-item h3::before{
   counter-increment: quiz-item;
   content: counter(quiz-item);
-  background-color: #475569;
+  background-color: #5D3587;
   width: 28px;
   height: 28px;
   font-size: 12px;
@@ -81,12 +107,12 @@ header h1{
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #e2e8f0;
+  color: #FFD1E3;
 }
 
 input{
   all: unset;
-  border: 1px solid #94a3b8;
+  border: 1px solid #FFD1E3;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -97,7 +123,7 @@ input{
 }
 
 input:checked{
-  border: 1px solid #a3e635;
+  border: 1px solid #FFD1E3;
 }
 
 input:checked::before{
@@ -105,13 +131,13 @@ input:checked::before{
   width: 10px;
   height: 10px;
   display: block;
-  background-color: #a3e635;
+  background-color: #FFD1E3;
   border-radius: 50%;
 }
 
 #acertos{
   text-align: center;
-  background-color: #a3e635;
+  background-color: #A367B1;
   position: fixed;
   bottom: 0;
   left: 0;

@@ -1,95 +1,106 @@
 const perguntas = [
-    {
-      pergunta: "Qual é a função principal do JavaScript?",
-      respostas: [
-        "Manipular o estilo CSS",
-        "Realizar operações matemáticas no servidor",
-        "Adicionar interatividade às páginas da web",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Como se declara uma variável em JavaScript?",
-      respostas: [
-        "var x = 5;",
-        "let x = 5;",
-        "ambas as opções anteriores estão corretas",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que é um array em JavaScript?",
-      respostas: [
-        "Um tipo de dado que representa um único valor",
-        "Uma estrutura de controle de fluxo",
-        "Uma coleção ordenada de valores",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "O que é o DOM em JavaScript?",
-      respostas: [
-        "Um novo tipo de dado",
-        "Um modelo para estruturar códigos JavaScript",
-        "A representação da estrutura da página web para interação via código",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Qual é a diferença entre '==' e '===' em JavaScript?",
-      respostas: [
-        "Ambos comparam valores e tipos de dados",
-        "'==' compara apenas valores, '===' compara valores e tipos de dados",
-        "'===' é um erro de sintaxe em JavaScript",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "O que é o hoisting em JavaScript?",
-      respostas: [
-        "Uma técnica de otimização de código",
-        "A elevação de declarações para o topo do seu contexto de execução",
-        "Uma forma de declarar variáveis sem a palavra-chave 'var'",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é a função do operador 'typeof' em JavaScript?",
-      respostas: [
-        "Comparar o tipo de dois valores",
-        "Retornar o tipo de um dado",
-        "Converter um valor para o tipo 'object'",
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "O que é o evento 'click' em JavaScript?",
-      respostas: [
-        "Um método para ocultar elementos HTML",
-        "Uma função para imprimir mensagens no console",
-        "Uma ação desencadeada pelo usuário ao clicar em um elemento da página",
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Qual é a finalidade do método 'forEach' em JavaScript?",
-      respostas: [
-        "Iterar sobre elementos de um array",
-        "Inverter a ordem de elementos em um array",
-        "Adicionar novos elementos a um array",
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "O que é uma closure em JavaScript?",
-      respostas: [
-        "Um tipo de loop",
-        "Uma função que retorna outra função, capturando variáveis do escopo externo",
-        "Um erro de sintaxe comum em programação",
-      ],
-      correta: 1
-    },
-  ];
+  {
+    pergunta: "Qual é o nome do restaurante em 'Five Nights at Freddy's'?",
+    respostas: [
+      "Freddy's Pizza",
+      "Fazbear's Fright",
+      "Chica's Chicken",
+      "Foxy's Diner",
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Quem é o animatrônico principal da série?",
+    respostas: [
+      "Bonnie",
+      "Freddy",
+      "Chica",
+      "Foxy",
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual é a função do jogador nos jogos 'Five Nights at Freddy's'?",
+    respostas: [
+      "Limpeza do restaurante",
+      "Cozinheiro",
+      "Guarda de segurança noturno",
+      "Técnico de manutenção",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "O que acontece se um animatrônico entra na sala do jogador?",
+    respostas: [
+      "Nada",
+      "O jogador é expulso do restaurante",
+      "O jogador é demitido",
+      "O jogador é transformado em animatrônico",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é a relação entre os animatrônicos e o jogador?",
+    respostas: [
+      "Inimigos mortais",
+      "Colegas de trabalho",
+      "Clientes",
+      "Parentes distantes",
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual é o objetivo principal nos jogos 'Five Nights at Freddy's'?",
+    respostas: [
+      "Construir um novo restaurante",
+      "Sobreviver à noite",
+      "Resolver quebra-cabeças",
+      "Fazer amizade com os animatrônicos",
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Quem é conhecido por sua risada assustadora em 'Five Nights at Freddy's'?",
+    respostas: [
+      "Bonnie",
+      "Freddy",
+      "Chica",
+      "Mangle",
+    ],
+    correta: 3
+  },
+  {
+    pergunta: "Qual é o nome do criador da série 'Five Nights at Freddy's'?",
+    respostas: [
+      "Scott Cawthon",
+      "Markiplier",
+      "Toby Fox",
+      "Hideo Kojima",
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Em qual ano o primeiro jogo 'Five Nights at Freddy's' foi lançado?",
+    respostas: [
+      "2010",
+      "2012",
+      "2014",
+      "2016",
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é o lema do restaurante Freddy Fazbear's Pizza?",
+    respostas: [
+      "Comida deliciosa, diversão garantida!",
+      "Onde a diversão nunca acaba!",
+      "O lugar mais assustador da cidade!",
+      "Coma aqui e nunca mais saia!",
+    ],
+    correta: 1
+  },
+];
+
   
   const quiz = document.querySelector('#quiz')
   const template = document.querySelector("template")
